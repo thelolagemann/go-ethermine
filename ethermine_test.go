@@ -41,6 +41,30 @@ func TestMiner_Stats(t *testing.T) {
 	}
 }
 
+func TestMiner_WorkerHistory(t *testing.T) {
+	if _, err := miner.Worker("miner").History(); err != nil {
+		t.Error(err)
+	}
+}
+
+func TestMiner_WorkerStats(t *testing.T) {
+	if _, err := miner.Worker("miner").Stats(); err != nil {
+		t.Error(err)
+	}
+}
+
+func TestMiner_WorkersMonitor(t *testing.T) {
+	if _, err := miner.WorkersMonitor(); err != nil {
+		t.Error(err)
+	}
+}
+
+func TestMiner_WorkersStats(t *testing.T) {
+	if _, err := miner.WorkersStats(); err != nil {
+		t.Error(err)
+	}
+}
+
 func TestPool_MinedBlocks(t *testing.T) {
 	if _, err := Ethermine.MinedBlocks(); err != nil {
 		t.Error(err)

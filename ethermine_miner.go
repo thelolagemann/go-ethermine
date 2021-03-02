@@ -4,10 +4,16 @@ import (
 	"fmt"
 )
 
-// Miner
+// Miner TODO
 type Miner struct {
 	address string
 	pool    *Pool
+}
+
+// Worker TODO
+type Worker struct {
+	*Miner
+	name string
 }
 
 // NewMiner create a new miner with the provided address
@@ -47,4 +53,35 @@ func (m *Miner) Settings() (res *MinerSettingsResponse, err error) {
 // ordered by time ascending.
 func (m *Miner) Stats() (res *MinerStatisticsResponse, err error) {
 	return res, m.get("currentStats", &res)
+}
+
+// WorkersStats returns all of the miners workers current statistics,
+// ordered by name ascending.
+func (m *Miner) WorkersStats() (res []*WorkerStatsResponse, err error) {
+	return res, m.get("workers", &res)
+}
+
+// WorkersMonitor returns a list of the workers currently active
+// under the miner. Note this is for monitoring purposes only and does
+// not provide historical data. Dead workers will be displayed for
+// up to 7 days.
+func (m *Miner) WorkersMonitor() (res []*WorkerStatsResponse, err error) {
+	return res, m.get("workers/monitor", res)
+}
+
+// Worker is a convenience function for accessing workers. All it does
+// is return a Worker embedded with the recieving miner and the workers name.
+func (m *Miner) Worker(worker string) *Worker {
+	return &Worker{m, worker}
+}
+
+// History returns a historic record of the workers statistics,
+// ordered by time ascending.
+func (w *Worker) History() (res []*WorkerStatsResponse, err error) {
+	return res, w.get(fmt.Sprintf("worker/%v/history", w.name), res)
+}
+
+// Stats returns the workers current statistics.
+func (w *Worker) Stats() (res *WorkerStatsResponse, err error) {
+	return res, w.get(fmt.Sprintf("worker/%v/currentStats", w.name), &res)
 }

@@ -94,3 +94,15 @@ type PoolStatsResponse struct {
 		BTC float64 `json:"btc"`
 	} `json:"price"`
 }
+
+type WorkerStatsResponse struct {
+	Worker           string  `json:"worker"`
+	Time             int     `json:"time"`
+	LastSeen         int     `json:"lastSeen"`
+	ReportedHashrate int     `json:"reportedHashrate"`
+	CurrentHashrate  float64 `json:"currentHashrate"`
+	ValidShares      int     `json:"validShares"`
+	InvalidShares    int     `json:"invalidShares"`
+	StaleShares      int     `json:"staleShares"`
+	AverageHashrate  float64 `json:"averageHashrate"`
+}
