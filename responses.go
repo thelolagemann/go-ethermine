@@ -7,6 +7,8 @@ type baseResponse struct {
 	Data   json.RawMessage `json:"data"`
 }
 
+// MinerHistoryResponse is the json response returned by
+// the /miner/:miner/history endpoint.
 type MinerHistoryResponse []struct {
 	Time             int     `json:"time"`
 	ReportedHashrate int     `json:"reportedHashrate"`
@@ -18,6 +20,8 @@ type MinerHistoryResponse []struct {
 	ActiveWorkers    int     `json:"activeWorkers"`
 }
 
+// MinerPayoutsResponse is the json response returned by
+// the /miner/:miner/payouts endpoint.
 type MinerPayoutsResponse []struct {
 	Start  int    `json:"start"`
 	End    int    `json:"end"`
@@ -26,11 +30,15 @@ type MinerPayoutsResponse []struct {
 	PaidOn int    `json:"paidOn"`
 }
 
+// MinerRoundsResponse is the json response returned by
+// the /miner/:miner/rounds endpoint.
 type MinerRoundsResponse []struct {
 	Block  int   `json:"block"`
 	Amount int64 `json:"amount"`
 }
 
+// MinerSettingsResponse is the json response returned by
+// the /miner/:miner/settings endpoint.
 type MinerSettingsResponse struct {
 	Monitor   int    `json:"monitor"`
 	MinPayout int64  `json:"minPayout"`
@@ -38,6 +46,8 @@ type MinerSettingsResponse struct {
 	IP        string `json:"ip"`
 }
 
+// MinerStatisticsResponse is the json response returned by
+// the /miner/:miner/currentStats.
 type MinerStatisticsResponse struct {
 	Time             int     `json:"time"`
 	LastSeen         int     `json:"lastSeen"`
@@ -55,12 +65,16 @@ type MinerStatisticsResponse struct {
 	BtcPerMin        float64 `json:"btcPerMin"`
 }
 
+// PoolMinedBlocksResponse is the json response returned by
+// the /blocks/history endpoint.
 type PoolMinedBlocksResponse []struct {
 	Time       int   `json:"time"`
 	NbrBlocks  int   `json:"nbrBlocks"`
 	Difficulty int64 `json:"difficulty"`
 }
 
+// PoolNetworkStatsResponse is the json response returned by
+// the /networkStats endpoint.
 type PoolNetworkStatsResponse struct {
 	Time       int     `json:"time"`
 	BlockTime  float64 `json:"blockTime"`
@@ -70,12 +84,16 @@ type PoolNetworkStatsResponse struct {
 	BTC        float64 `json:"btc"`
 }
 
+// PoolServerHashrateResponse is the json response returned by
+// the /servers/history endpoint.
 type PoolServerHashrateResponse []struct {
 	Time     int     `json:"time"`
 	Server   string  `json:"server"`
 	Hashrate float64 `json:"hashrate"`
 }
 
+// PoolStatsResponse is the json response returned by
+// the /poolStats endpoint.
 type PoolStatsResponse struct {
 	TopMiners   []interface{} `json:"topMiners"`
 	MinedBlocks []struct {
@@ -95,6 +113,8 @@ type PoolStatsResponse struct {
 	} `json:"price"`
 }
 
+// WorkersStatsResponse is the json response returned by
+// the various worker endpoints. TODO split?
 type WorkerStatsResponse struct {
 	Worker           string  `json:"worker"`
 	Time             int     `json:"time"`

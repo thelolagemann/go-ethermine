@@ -4,13 +4,16 @@ import (
 	"fmt"
 )
 
-// Miner TODO
+// Miner is a convenience struct that embeds a Pool
+// alongside a miners address.
 type Miner struct {
 	address string
 	pool    *Pool
 }
 
-// Worker TODO
+// Worker is a convenience struct that embeds a Miner
+// alongside a workers name, this allows for easy access
+// to per-worker endpoints.
 type Worker struct {
 	*Miner
 	name string
@@ -38,7 +41,9 @@ func (m *Miner) Payouts() (res *MinerPayoutsResponse, err error) {
 	return res, m.get("payouts", &res)
 }
 
-// Rounds... TODO
+// Rounds returns a historic record of the miners
+// rounds and the base units allocated to them, ordered
+// by block number descending.
 func (m *Miner) Rounds() (res *MinerRoundsResponse, err error) {
 	return res, m.get("rounds", &res)
 }
