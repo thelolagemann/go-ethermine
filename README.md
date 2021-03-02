@@ -1,5 +1,7 @@
 # go-ethermine
 
+[![GoDoc reference](https://img.shields.io/badge/docs-reference-blue?style=flat-square&logo=go)](https://pkg.go.dev/github.com/thelolagemann/go-ethermine) [![GitHub](https://img.shields.io/github/license/thelolagemann/go-ethermine?style=flat-square)](https://github.com/thelolagemann/go-ethermine/blob/main/LICENSE) ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/thelolagemann/go-ethermine?style=flat-square&l)
+
 > An unoffical golang client for ethermine and their generic pool API.
 
 ## Getting started
