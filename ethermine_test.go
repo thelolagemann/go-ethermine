@@ -1,6 +1,12 @@
 package ethermine
 
 import (
+	"bytes"
+	"encoding/json"
+	"errors"
+	"fmt"
+	"io/ioutil"
+	"net/http"
 	"os"
 	"testing"
 )
@@ -9,7 +15,41 @@ import (
 
 var (
 	miner = NewMiner(os.Getenv("ETHERMINE_ADDRESS"), Ethermine)
+
+	mockResults map[string]json.RawMessage
 )
+
+type mockClient struct{}
+
+func (m *mockClient) Do(req *http.Request) (*http.Response, error) {
+	if endpoint := req.URL.Path; endpoint != "" {
+		fmt.Println(endpoint)
+		if val, ok := mockResults[endpoint]; ok {
+			r := ioutil.NopCloser(bytes.NewReader(val))
+			return func(req *http.Request) (*http.Response, error) {
+				return &http.Response{
+					StatusCode: 200,
+					Body:       r,
+				}, nil
+			}(req)
+		}
+	}
+	return nil, errors.New("couldn't mock")
+}
+
+func init() {
+	if os.Getenv("ETHERMINE_ADDRESS") == "" {
+		client = &mockClient{}
+	}
+
+	b, err := os.ReadFile("responses.json")
+	if err != nil {
+		panic(err)
+	}
+	if err := json.NewDecoder(bytes.NewReader(b)).Decode(&mockResults); err != nil {
+		panic(err)
+	}
+}
 
 func TestMiner_History(t *testing.T) {
 	if _, err := miner.History(); err != nil {

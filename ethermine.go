@@ -10,6 +10,14 @@ import (
 	"net/http"
 )
 
+var (
+	client httpClient = &http.Client{}
+)
+
+type httpClient interface {
+	Do(req *http.Request) (*http.Response, error)
+}
+
 // Pool is the base client used for sending requests to
 // the generic API.
 type Pool struct {
@@ -31,7 +39,11 @@ var (
 )
 
 func (p *Pool) get(endpoint string, bind interface{}) error {
-	res, err := http.Get(fmt.Sprintf("%v/%v", p.url, endpoint))
+	req, err := http.NewRequest("GET", fmt.Sprintf("%v/%v", p.url, endpoint), nil)
+	if err != nil {
+		return err
+	}
+	res, err := client.Do(req)
 	if err != nil {
 		return err
 	}

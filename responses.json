@@ -1,0 +1,431 @@
+{
+  "/poolStats": {
+    "status": "OK",
+    "data": {
+      "topMiners": [],
+      "minedBlocks": [
+        {
+          "number": 11963201,
+          "miner": "3ba9d4f476b3d8ba476033a2f5b301bc9f4eaf96",
+          "time": 1614746492
+        },
+        {
+          "number": 11963196,
+          "miner": "67ab30cfac60fe8d557fa47ee5a353e9d7c1687c",
+          "time": 1614746412
+        },
+        {
+          "number": 11963195,
+          "miner": "cf58285a2aaa934834a702be1f0f6cf94a630b9e",
+          "time": 1614746400
+        },
+        {
+          "number": 11963194,
+          "miner": "649B86FC4ffd2D5212bd908cefFfaC9a8455798f",
+          "time": 1614746394
+        },
+        {
+          "number": 11963192,
+          "miner": "d24854b033c71991Bf6CC25018556e779F88f62E",
+          "time": 1614746390
+        },
+        {
+          "number": 11963191,
+          "miner": "93EDF80Ce3Db18950f781c91A9EA5b97778A61bE",
+          "time": 1614746378
+        },
+        {
+          "number": 11963180,
+          "miner": "98835717C6d2C28d31f4c663947C7dFF42a5cB94",
+          "time": 1614746243
+        },
+        {
+          "number": 11963178,
+          "miner": "01f1af72ce1878f815c3cbbb0d33c7a4c43561a7",
+          "time": 1614746221
+        },
+        {
+          "number": 11963174,
+          "miner": "ec11a19c3f4848dae543be77007e997a29c27033",
+          "time": 1614746181
+        },
+        {
+          "number": 11963165,
+          "miner": "6da68e5cec65d4cca5aa1c917063a676526b9973",
+          "time": 1614746103
+        }
+      ],
+      "poolStats": {
+        "hashRate": 84378498111102.02,
+        "miners": 170396,
+        "workers": 516287,
+        "blocksPerHour": 55.83
+      },
+      "price": {
+        "usd": 1522.6,
+        "btc": 0.03121
+      }
+    }
+  },
+  "/servers/history": {
+    "status": "OK",
+    "data": [
+      {
+        "time": 1614142200,
+        "server": "asia1",
+        "hashrate": 14400769111111.264
+      },
+      {
+        "time": 1614142200,
+        "server": "eu1",
+        "hashrate": 51841522499996.42
+      },
+      {
+        "time": 1614142200,
+        "server": "us1",
+        "hashrate": 10675845277778.209
+      },
+      {
+        "time": 1614142200,
+        "server": "us2",
+        "hashrate": 5230811388888.892
+      },
+      {
+        "time": 1614142800,
+        "server": "asia1",
+        "hashrate": 14411148277777.91
+      },
+      {
+        "time": 1614142800,
+        "server": "eu1",
+        "hashrate": 51858180333329.29
+      },
+      {
+        "time": 1614142800,
+        "server": "us1",
+        "hashrate": 10690146555556.123
+      },
+      {
+        "time": 1614142800,
+        "server": "us2",
+        "hashrate": 5238949777777.762
+      },
+      {
+        "time": 1614143400,
+        "server": "asia1",
+        "hashrate": 14407355111111.252
+      },
+      {
+        "time": 1614143400,
+        "server": "eu1",
+        "hashrate": 51860137777776.36
+      },
+      {
+        "time": 1614143400,
+        "server": "us1",
+        "hashrate": 10693647333333.812
+      },
+      {
+        "time": 1614143400,
+        "server": "us2",
+        "hashrate": 5237273277777.79
+      },
+      {
+        "time": 1614144000,
+        "server": "asia1",
+        "hashrate": 14389891722222.283
+      },
+      {
+        "time": 1614144000,
+        "server": "eu1",
+        "hashrate": 51861790722217.836
+      },
+      {
+        "time": 1614144000,
+        "server": "us1",
+        "hashrate": 10706230944444.807
+      },
+      {
+        "time": 1614144000,
+        "server": "us2",
+        "hashrate": 5234936333333.346
+      },
+      {
+        "time": 1614144600,
+        "server": "asia1",
+        "hashrate": 14386799444444.719
+      },
+      {
+        "time": 1614144600,
+        "server": "eu1",
+        "hashrate": 51883866999995.11
+      },
+      {
+        "time": 1614144600,
+        "server": "us1",
+        "hashrate": 10716244500000.275
+      },
+      {
+        "time": 1614144600,
+        "server": "us2",
+        "hashrate": 5240956722222.193
+      },
+      {
+        "time": 1614145200,
+        "server": "asia1",
+        "hashrate": 14380569888889.113
+      },
+      {
+        "time": 1614145200,
+        "server": "eu1",
+        "hashrate": 51876065333329.14
+      },
+      {
+        "time": 1614145200,
+        "server": "us1",
+        "hashrate": 10721262166667.033
+      },
+      {
+        "time": 1614145200,
+        "server": "us2",
+        "hashrate": 5247923555555.578
+      },
+      {
+        "time": 1614145800,
+        "server": "asia1",
+        "hashrate": 14378343055555.541
+      },
+      {
+        "time": 1614145800,
+        "server": "eu1",
+        "hashrate": 51886023111106.92
+      },
+      {
+        "time": 1614145800,
+        "server": "us1",
+        "hashrate": 10724961944444.865
+      },
+      {
+        "time": 1614145800,
+        "server": "us2",
+        "hashrate": 5257579277777.795
+      },
+      {
+        "time": 1614146400,
+        "server": "asia1",
+        "hashrate": 14367131166666.68
+      },
+      {
+        "time": 1614146400,
+        "server": "eu1",
+        "hashrate": 51882074722216.68
+      },
+      {
+        "time": 1614146400,
+        "server": "us1",
+        "hashrate": 10723108444444.854
+      },
+      {
+        "time": 1614146400,
+        "server": "us2",
+        "hashrate": 5257028722222.256
+      },
+      {
+        "time": 1614147000,
+        "server": "asia1",
+        "hashrate": 14361262166666.787
+      },
+      {
+        "time": 1614147000,
+        "server": "eu1",
+        "hashrate": 51897463166662.4
+      },
+      {
+        "time": 1614147000,
+        "server": "us1",
+        "hashrate": 10715681944444.775
+      }
+    ]
+  },
+  "/networkStats": {
+    "status": "OK",
+    "data": {
+      "time": 1614747000,
+      "blockTime": 13.305071799572257,
+      "difficulty": 5340467750355109,
+      "hashrate": 419201994015143,
+      "usd": 1522.6,
+      "btc": 0.03121
+    }
+  },
+  "/blocks/history": {
+    "status": "OK",
+    "data": [
+      {
+        "time": 1614142746,
+        "nbrBlocks": 5,
+        "difficulty": 5461416361470337
+      },
+      {
+        "time": 1614146379,
+        "nbrBlocks": 63,
+        "difficulty": 5458500637137558
+      },
+      {
+        "time": 1614149966,
+        "nbrBlocks": 57,
+        "difficulty": 5418456647018260
+      },
+      {
+        "time": 1614153586,
+        "nbrBlocks": 54,
+        "difficulty": 5383907602031328
+      },
+      {
+        "time": 1614157188,
+        "nbrBlocks": 67,
+        "difficulty": 5323130607989578
+      },
+      {
+        "time": 1614160765,
+        "nbrBlocks": 56,
+        "difficulty": 5297128809626931
+      },
+      {
+        "time": 1614164344,
+        "nbrBlocks": 57,
+        "difficulty": 5327914978210235
+      },
+      {
+        "time": 1614167967,
+        "nbrBlocks": 49,
+        "difficulty": 5356158699646387
+      },
+      {
+        "time": 1614171584,
+        "nbrBlocks": 57,
+        "difficulty": 5348222721737265
+      },
+      {
+        "time": 1614175172,
+        "nbrBlocks": 58,
+        "difficulty": 5342811963902829
+      },
+      {
+        "time": 1614178753,
+        "nbrBlocks": 70,
+        "difficulty": 5407865566399612
+      },
+      {
+        "time": 1614182332,
+        "nbrBlocks": 61,
+        "difficulty": 5397293959516726
+      },
+      {
+        "time": 1614185950,
+        "nbrBlocks": 47,
+        "difficulty": 5300302238315206
+      },
+      {
+        "time": 1614189599,
+        "nbrBlocks": 58,
+        "difficulty": 5294653200143123
+      },
+      {
+        "time": 1614193197,
+        "nbrBlocks": 62,
+        "difficulty": 5299525007575776
+      },
+      {
+        "time": 1614196793,
+        "nbrBlocks": 52,
+        "difficulty": 5325441773194710
+      },
+      {
+        "time": 1614200327,
+        "nbrBlocks": 58,
+        "difficulty": 5237356594042012
+      },
+      {
+        "time": 1614203932,
+        "nbrBlocks": 62,
+        "difficulty": 5252378062406331
+      },
+      {
+        "time": 1614207586,
+        "nbrBlocks": 54,
+        "difficulty": 5259546636753920
+      },
+      {
+        "time": 1614211188,
+        "nbrBlocks": 60,
+        "difficulty": 5279886780356200
+      },
+      {
+        "time": 1614214704,
+        "nbrBlocks": 71,
+        "difficulty": 5362787393469578
+      },
+      {
+        "time": 1614218379,
+        "nbrBlocks": 56,
+        "difficulty": 5444447917682590
+      },
+      {
+        "time": 1614221794,
+        "nbrBlocks": 38,
+        "difficulty": 5375542174825465
+      },
+      {
+        "time": 1614225544,
+        "nbrBlocks": 60,
+        "difficulty": 5294487744979501
+      },
+      {
+        "time": 1614229188,
+        "nbrBlocks": 51,
+        "difficulty": 5296655423167960
+      },
+      {
+        "time": 1614232796,
+        "nbrBlocks": 51,
+        "difficulty": 5206711478459048
+      },
+      {
+        "time": 1614236378,
+        "nbrBlocks": 73,
+        "difficulty": 5148066677260873
+      },
+      {
+        "time": 1614239974,
+        "nbrBlocks": 52,
+        "difficulty": 5170490059489808
+      },
+      {
+        "time": 1614243571,
+        "nbrBlocks": 74,
+        "difficulty": 5241352215219227
+      },
+      {
+        "time": 1614247179,
+        "nbrBlocks": 51,
+        "difficulty": 5315823749559223
+      },
+      {
+        "time": 1614250748,
+        "nbrBlocks": 60,
+        "difficulty": 5276847612372151
+      },
+      {
+        "time": 1614254360,
+        "nbrBlocks": 58,
+        "difficulty": 5315079011493751
+      },
+      {
+        "time": 1614257798,
+        "nbrBlocks": 58,
+        "difficulty": 5372248832154289
+      }
+    ]
+  }
+}
