@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"encoding/json"
 	"errors"
-	"fmt"
 	"io/ioutil"
 	"net/http"
 	"os"
@@ -23,7 +22,6 @@ type mockClient struct{}
 
 func (m *mockClient) Do(req *http.Request) (*http.Response, error) {
 	if endpoint := req.URL.Path; endpoint != "" {
-		fmt.Println(endpoint)
 		if val, ok := mockResults[endpoint]; ok {
 			r := ioutil.NopCloser(bytes.NewReader(val))
 			return func(req *http.Request) (*http.Response, error) {

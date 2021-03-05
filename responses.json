@@ -1,4 +1,206 @@
 {
+  "/miner//history": {
+    "status": "OK",
+    "data": [
+      {
+        "time": 1614899400,
+        "reportedHashrate": null,
+        "currentHashrate": null,
+        "validShares": null,
+        "invalidShares": null,
+        "staleShares": null,
+        "averageHashrate": 103718167.07218163,
+        "activeWorkers": null
+      },
+      {
+        "time": 1614900000,
+        "reportedHashrate": null,
+        "currentHashrate": null,
+        "validShares": null,
+        "invalidShares": null,
+        "staleShares": null,
+        "averageHashrate": 103648284.31372546,
+        "activeWorkers": null
+      },
+      {
+        "time": 1614900600,
+        "reportedHashrate": null,
+        "currentHashrate": null,
+        "validShares": null,
+        "invalidShares": null,
+        "staleShares": null,
+        "averageHashrate": 103640329.21810696,
+        "activeWorkers": null
+      },
+      {
+        "time": 1614901200,
+        "reportedHashrate": null,
+        "currentHashrate": null,
+        "validShares": null,
+        "invalidShares": null,
+        "staleShares": null,
+        "averageHashrate": 103609452.73631838,
+        "activeWorkers": null
+      }
+    ]
+  },
+  "/miner//payouts": {
+    "status": "OK",
+    "data": [
+      {
+        "start": 4321298,
+        "end": 11968935,
+        "amount": 19180739578736640,
+        "txHash": "0x59c5216e50b599b994118e4a84946f5c6945df78b0bbdf97ccf3566857323e16",
+        "paidOn": 1614823363
+      },
+      {
+        "start": 4118200,
+        "end": 4321290,
+        "amount": 99030059894116300,
+        "txHash": "0x766fe4d4617c12b71dabe78e22fe9332c64ea35ce4740a7f7ce67fbbd9e63948",
+        "paidOn": 1506674350
+      },
+      {
+        "start": 4014059,
+        "end": 4118180,
+        "amount": 99034363515469040,
+        "txHash": "0xc3d1eadc8b54bb85bec992e11bfdb3dc35fd24c6e53aa771ec42fb874dd03beb",
+        "paidOn": 1501900485
+      }
+    ]
+  },
+  "/miner//rounds": {
+    "status": "OK",
+    "data": [
+      {
+        "block": 11981162,
+        "amount": 27076182903023
+      },
+      {
+        "block": 11981139,
+        "amount": 28697595800737
+      },
+      {
+        "block": 11981101,
+        "amount": 24446792218031
+      },
+      {
+        "block": 11981080,
+        "amount": 24560789388882
+      }
+    ]
+  },
+  "/miner//settings": {
+    "status": "OK",
+    "data": {
+      "email": "",
+      "monitor": 0,
+      "minPayout": 100000000000000000,
+      "ip": "*.*.*.246"
+    }
+  },
+  "/miner//currentStats": {
+    "status": "OK",
+    "data": {
+      "time": 1614985200,
+      "lastSeen": 1614985116,
+      "reportedHashrate": 105950268,
+      "currentHashrate": 108888888.8888889,
+      "validShares": 98,
+      "invalidShares": 0,
+      "staleShares": 0,
+      "averageHashrate": 89201646.09053499,
+      "activeWorkers": 1,
+      "unpaid": 9170956052806776,
+      "unconfirmed": null,
+      "coinsPerMin": 0.0000033698595421583546,
+      "usdPerMin": 0.0051700385095793475,
+      "btcPerMin": 1.0551030226497808e-7
+    }
+  },
+  "/miner//workers": {
+    "status": "OK",
+    "data": [
+      {
+        "worker": "miner",
+        "time": 1614985200,
+        "lastSeen": 1614985116,
+        "reportedHashrate": 105950268,
+        "currentHashrate": 108888888.8888889,
+        "validShares": 98,
+        "invalidShares": 0,
+        "staleShares": 0,
+        "averageHashrate": 88881944.44444445
+      }
+    ]
+  },
+  "/miner//worker/miner/history": {
+    "status": "OK",
+    "data": [
+      {
+        "time": 1614942600,
+        "reportedHashrate": 108802742,
+        "currentHashrate": 104000000,
+        "validShares": 91,
+        "invalidShares": 0,
+        "staleShares": 4,
+        "averageHashrate": 104000000
+      },
+      {
+        "time": 1614943200,
+        "reportedHashrate": 108769699,
+        "currentHashrate": 109555555.55555555,
+        "validShares": 96,
+        "invalidShares": 0,
+        "staleShares": 4,
+        "averageHashrate": 106777777.77777778
+      },
+      {
+        "time": 1614943800,
+        "reportedHashrate": 108762148,
+        "currentHashrate": 117333333.33333333,
+        "validShares": 103,
+        "invalidShares": 0,
+        "staleShares": 4,
+        "averageHashrate": 110296296.2962963
+      }
+    ]
+  },
+  "/miner//worker/miner/currentStats": {
+    "status": "OK",
+    "data": {
+      "time": 1614985200,
+      "lastSeen": 1614985116,
+      "reportedHashrate": 105950268,
+      "currentHashrate": 108888888.8888889,
+      "validShares": 98,
+      "invalidShares": 0,
+      "staleShares": 0,
+      "averageHashrate": 88881944.44444445
+    }
+  },
+  "/miner//workers/monitor": {
+    "status": "OK",
+    "data": [
+      {
+        "worker": "main",
+        "lastSeen": 1614752606,
+        "currentHashrate": 1111111.111111111,
+        "validShares": 1,
+        "invalidShares": 0,
+        "staleShares": 0
+      },
+      {
+        "worker": "miner",
+        "lastSeen": 1614985116,
+        "currentHashrate": 108888888.8888889,
+        "validShares": 98,
+        "invalidShares": 0,
+        "staleShares": 0
+      }
+    ]
+  },
   "/poolStats": {
     "status": "OK",
     "data": {
