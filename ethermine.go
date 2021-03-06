@@ -73,6 +73,11 @@ func (p *Pool) MinedBlocks() (pRes *PoolMinedBlocksResponse, err error) {
 	return pRes, p.get("blocks/history", &pRes)
 }
 
+// Miner returns a Miner with the recieving pool embedded.
+func (p *Pool) Miner(address string) *Miner {
+	return &Miner{address, p}
+}
+
 // NetworkStats returns current network stats, including
 // hashrate and difficulty.
 func (p *Pool) NetworkStats() (pRes *PoolNetworkStatsResponse, err error) {

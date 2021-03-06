@@ -23,4 +23,12 @@ if err != nil {
 fmt.Printf("Ethermine is mining $%.2f an hour!", (stats.PoolStats.BlocksPerHour*5)*stats.Price.USD)
 // Output: Ethermine is mining $430049.51 an hour!
 ...
+miner := Ethermine.Miner("ADDRESS")
+stats, err := miner.Stats()
+if err != nil {
+    // handle err
+}
+fmt.Printf("Unpaid balance: %v", stats.Unpaid)
 ```
+
+View the godocs for more detailed documentation.
