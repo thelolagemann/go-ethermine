@@ -16,6 +16,7 @@ go get -u github.com/thelolagemann/go-ethermine
 
 ```golang
 ...
+// pool interaction
 stats, err := Ethermine.Stats()
 if err != nil {
     // handle err...
@@ -23,12 +24,21 @@ if err != nil {
 fmt.Printf("Ethermine is mining $%.2f an hour!", (stats.PoolStats.BlocksPerHour*5)*stats.Price.USD)
 // Output: Ethermine is mining $430049.51 an hour!
 ...
+// miner interaction
 miner := Ethermine.Miner("ADDRESS")
 stats, err := miner.Stats()
 if err != nil {
     // handle err
 }
 fmt.Printf("Unpaid balance: %v", stats.Unpaid)
+...
+// worker interaction
+worker := miner.Worker("MINER_NAME")
+stats, err := worker.Stats()
+if err !=- nil {
+    // handle err`
+}
+fmt.Printf("Worker hashrate: %v", stats.CurrentHashrate)
 ```
 
 View the godocs for more detailed documentation.
